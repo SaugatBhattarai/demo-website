@@ -36,6 +36,7 @@ body{
 .site-title h1{
 	font-weight: 400;
 	font-size: 2.5em;
+	opacity: 0.6;
 }
 
 .nav-bar{
@@ -53,21 +54,22 @@ body{
 	padding:10px;
 	text-transform: uppercase;
 	font-size: 16px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .nav-bar ul li a{
 	text-decoration: none;
 	color:black;
+	opacity: 0.7;
 }
 
 .nav-bar ul li a:hover{
-	background-color: #d1603d;
-}
-.nav-bar ul li a:active{
-	background-color: #d1603d;
+	color: #08c;
 }
 
+.nav-bar ul li.selected a{
+	color: #08c;
+}
 
 #featured-home{
 	background-color: #e0e0ce;
@@ -95,14 +97,14 @@ body{
 /*section common css*/
 section{
 	width: 100%;
-	height: 450px;
+	/*height: 450px;*/
 	padding:30px 40px;
 }
 
 .section-title{
 	text-align: center;
 	font-weight: 400px;
-	font-size: 20px;
+	font-size: 24px;
 	padding-bottom: 15px;
 	text-transform: uppercase;
 }
@@ -112,8 +114,9 @@ section{
 #featured-home .section-detail{
 	text-align: center;
 }
+
 #featured-home .section-detail .slider-image img {
-	width:700px;
+	max-width: 700px;
 }
 #featured-home .section-detail .slider-caption{
 	padding:15px;
@@ -137,4 +140,27 @@ section{
 .media-body{
 	padding-left: 20px;
 	line-height: 1.5;
+}
+
+
+/*partners section css*/
+
+#partners .section-detail{
+	display: flex;
+	justify-content:space-between;
+}
+
+#partners .partner-logo{
+	padding:20px 30px;
+}
+
+#partners .partner-logo img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+#partners .partner-logo img:hover {
+	filter: none;
+  -webkit-filter: grayscale(0%);
+  opacity: 1;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -20,12 +21,12 @@
 	</div>
 	<div class="nav-bar">
 		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#teams">Teams</a></li>
-			<li><a href="#partners">Partners</a></li>
-			<li><a href="#contact-us">Contact Us</a></li>
-			<li><a href="#about-us">About Us</a></li>
+			<li class="menu selected"><a href="#home">Home</a></li>
+			<li class="menu"><a href="#services">Services</a></li>
+			<li class="menu"><a href="#teams">Teams</a></li>
+			<li class="menu"><a href="#partners">Partners</a></li>
+			<li class="menu"><a href="#contact-us">Contact Us</a></li>
+			<li class="menu"><a href="#about-us">About Us</a></li>
 		</ul>
 	</div>
 </div>
@@ -60,23 +61,37 @@
 					</div>
 				</div>
 				<div class="media-body">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section id="partners">
-			<div class="section-title">
-			
+		<div class="section-title">
+			<span>Proud To Work With These Company</span>
 		</div>
 		<div class="section-detail">
-			
+				<div class="partner-logo">
+					<img src="icon/amazon.png">
+				</div>
+				<div class="partner-logo">
+					<img src="icon/facebook.png">
+				</div>
+				<!-- <div class="partner-logo">
+					<img src="icon/fedex.png">
+				</div> -->
+				<div class="partner-logo">
+					<img src="icon/microsoft.png">
+				</div>
+				<div class="partner-logo">
+					<img src="icon/samsung.png">
+				</div>
 		</div>
 	</section>
 
 	<section id="services">
-			<div class="section-title">
+		<div class="section-title">
 			
 		</div>
 		<div class="section-detail">
@@ -85,7 +100,7 @@
 	</section>
 
 	<section id="teams">
-			<div class="section-title">
+		<div class="section-title">
 			
 		</div>
 		<div class="section-detail">
@@ -105,6 +120,13 @@
 <div class="footer">
 	
 </div>
+<script type="text/javascript">
+
+	$( "li.menu" ).click(function() {
+			$("li.menu").removeClass('selected');
+			$(this).addClass( "selected" );
+	});
+</script>
 </body>
 </html>
 
