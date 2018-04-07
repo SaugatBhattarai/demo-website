@@ -90,8 +90,51 @@ body{
 #contact-us{
 	background-color: #f9f9f9;
 }
+
+
+/*section common css*/
 section{
 	width: 100%;
-	height: 400px;
+	height: 450px;
 	padding:30px 40px;
+}
+
+.section-title{
+	text-align: center;
+	font-weight: 400px;
+	font-size: 20px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+
+
+/*featured home css*/
+#featured-home .section-detail{
+	text-align: center;
+}
+#featured-home .section-detail .slider-image img {
+	width:700px;
+}
+#featured-home .section-detail .slider-caption{
+	padding:15px;
+}
+
+
+/*about us section css*/
+.media {
+	display: flex;
+}
+
+#about-us .media-image img{
+	width:245px;
+}
+
+.media-caption{
+	text-align: center;
+	padding-top:10px;
+}
+
+.media-body{
+	padding-left: 20px;
+	line-height: 1.5;
 }
